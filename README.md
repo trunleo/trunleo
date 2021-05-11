@@ -1,6 +1,9 @@
-👋 Hi, I’m Trung Tran
-👀 I’m interested in playing football, hanging out with my friends, and coding
+👋 Hi, I’m Trung Tran.
+
+👀 I’m interested in playing football, hanging out with my friends, and coding.
+
 🌱 I’m currently learning Data Engineer at Technology and Education University in Ho Chi Minh city
+
 💞️ Now, I'm living in VietNam
 
 <!---
