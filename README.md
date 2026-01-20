@@ -46,12 +46,11 @@ I am a passionate **Senior Cloud Data Engineer** specializing in architecting an
 ### 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=trunleo&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Trung's GitHub stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trunleo&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=trunleo&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0d1117" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trunleo&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" height="150" alt="languages graph" />
 </div>
-<br />
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=trunleo&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=trunleo&theme=tokyonight&hide_border=true&bg_color=0d1117" height="150" alt="streak graph" />
 </div>
 
 ---
