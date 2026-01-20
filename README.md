@@ -51,7 +51,7 @@ I am a passionate **Senior Cloud Data Engineer** specializing in architecting an
 </div>
 <br />
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=trunleo&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=trunleo&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
 
 ---
