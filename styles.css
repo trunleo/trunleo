@@ -614,6 +614,32 @@ ul {
     margin-right: 8px;
 }
 
+.inline-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+}
+
+.inline-link:hover {
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.paper-icon-link {
+    color: var(--accent-color);
+    margin-left: 10px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.paper-icon-link:hover {
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
     .certs-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
