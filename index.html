@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trung Tran | Senior Cloud Data Engineer</title>
-    <meta name="description" content="Senior Cloud Data Engineer based in Vietnam. Passionate about building scalable data solutions, cloud architecture, and automation.">
-    
+    <meta name="description" content="Trung Tran (Leo) — Senior Cloud Data Engineer based in Vietnam. Architecting scalable data platforms, lakehouses, and streaming systems on AWS and Azure.">
+    <meta property="og:title" content="Trung Tran | Senior Cloud Data Engineer">
+    <meta property="og:description" content="Architecting scalable data platforms, lakehouses, and streaming systems on AWS and Azure.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%230b0e14%22/><text x=%2250%22 y=%2268%22 font-size=%2252%22 font-family=%22monospace%22 fill=%22%23f5b759%22 text-anchor=%22middle%22>~$</text></svg>">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -21,159 +26,218 @@
 
     <header class="header">
         <div class="container nav">
-            <a href="#" class="logo">&lt;TrungTran /&gt;</a>
+            <a href="#" class="logo"><span class="prompt">~/</span>trunleo<span class="cursor"></span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#about" class="nav-link"><span style="color:var(--accent-color)">01.</span> About</a></li>
-                    <li><a href="#skills" class="nav-link"><span style="color:var(--accent-color)">02.</span> Skills</a></li>
-                    <li><a href="#experience" class="nav-link"><span style="color:var(--accent-color)">03.</span> Experience</a></li>
-                    <li><a href="#achievements" class="nav-link"><span style="color:var(--accent-color)">04.</span> Achievements</a></li>
-                    <li><a href="#contact" class="nav-link"><span style="color:var(--accent-color)">05.</span> Contact</a></li>
+                    <li><a href="#about" class="nav-link"><span class="idx">01.</span>about</a></li>
+                    <li><a href="#skills" class="nav-link"><span class="idx">02.</span>skills</a></li>
+                    <li><a href="#experience" class="nav-link"><span class="idx">03.</span>experience</a></li>
+                    <li><a href="#achievements" class="nav-link"><span class="idx">04.</span>achievements</a></li>
+                    <li><a href="#contact" class="nav-link"><span class="idx">05.</span>contact</a></li>
+                    <li><a href="mailto:tutrung.leo@gmail.com" class="nav-cta">say_hello()</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="section hero">
-            <div class="container">
-                <span class="hero-intro">Hi, my name is</span>
-                <h1 class="hero-name">Trung Tran (Leo)</h1>
-                <h2 class="hero-title">I build scalable data solutions.</h2>
-                <p class="hero-description">
-                    I'm a <strong>Senior Cloud Data Engineer</strong> based in Vietnam, specializing in architecting and building high-performance data pipelines and cloud infrastructure on Azure and AWS.
-                </p>
-                <a href="#contact" class="btn">Get In Touch</a>
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <span class="hero-kicker">~$ whoami</span>
+                    <h1 class="hero-name">Trung Tran <em>(Leo)</em></h1>
+                    <h2 class="hero-role">I move data at scale — reliably.</h2>
+                    <p class="hero-description">
+                        <strong>Senior Cloud Data Engineer</strong> based in Vietnam. I architect and build
+                        high-performance data platforms, lakehouses, and streaming systems on
+                        <strong>AWS</strong> and <strong>Azure</strong> — from raw ingestion to
+                        analytics that drive business decisions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn">Get In Touch</a>
+                        <a href="#experience" class="btn btn-ghost">View Experience</a>
+                    </div>
+                </div>
+
+                <div class="terminal" aria-hidden="true">
+                    <div class="terminal-bar">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="title">pipeline — prod</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-output"></div>
+                </div>
             </div>
         </section>
-        
-        <!-- Placeholders for next steps -->
-        <section id="about" class="section container about-section">
-            <h2 class="section-title"><span class="section-number">01.</span> About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        Hello! My name is Trung, a <strong>Senior Cloud Data Engineer</strong> based in Vietnam. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-                    </p>
-                    <p>
-                        I am passionate about building scalable data solutions, cloud architecture, and automation. I thrive in challenging environments where I can leverage my skills to solve complex problems.
-                    </p>
-                    <p>
-                        When I'm not at the computer, I usually enjoy playing football, exploring new technology, and continuous learning.
-                    </p>
+
+        <section class="metrics">
+            <div class="container metrics-grid">
+                <div class="metric reveal">
+                    <div class="metric-value">5+</div>
+                    <div class="metric-label">Years in Data</div>
                 </div>
-                <div class="about-img">
+                <div class="metric reveal">
+                    <div class="metric-value">6</div>
+                    <div class="metric-label">Certifications</div>
+                </div>
+                <div class="metric reveal">
+                    <div class="metric-value">2</div>
+                    <div class="metric-label">Cloud Platforms</div>
+                </div>
+                <div class="metric reveal">
+                    <div class="metric-value">1</div>
+                    <div class="metric-label">Research Paper</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section container">
+            <div class="section-title reveal">
+                <span class="section-comment">-- 01</span>
+                <h2 class="section-heading">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        Hello! I'm Trung, a <strong>Senior Cloud Data Engineer</strong> based in Vietnam.
+                        My work lives where infrastructure meets insight: designing the platforms that turn
+                        raw, messy data into <span class="hl">reliable, queryable truth</span>.
+                    </p>
+                    <p>
+                        Over the past five years I've led cloud migrations for banking and healthcare,
+                        architected streaming systems on <strong>Kafka</strong>, and built lakehouses on
+                        <strong>Databricks</strong>, <strong>Iceberg</strong>, and <strong>Delta Lake</strong> —
+                        always with an eye on scalability, cost, and governance.
+                    </p>
+                    <p>
+                        Off the clock, you'll find me playing football, exploring new technology,
+                        and mentoring the next generation of engineers.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">data platforms</span>
+                        <span class="tag">lakehouse</span>
+                        <span class="tag">streaming</span>
+                        <span class="tag">cloud architecture</span>
+                        <span class="tag">mentorship</span>
+                    </div>
+                </div>
+                <div class="about-img reveal">
                     <div class="img-wrapper">
-                        <!-- Using local asset -->
                         <img src="assets/avatar.jpg" alt="Trung Tran Profile">
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="skills" class="section container">
-            <h2 class="section-title"><span class="section-number">02.</span> Technical Skills</h2>
+            <div class="section-title reveal">
+                <span class="section-comment">-- 02</span>
+                <h2 class="section-heading">Technical Skills</h2>
+            </div>
             <div class="skills-grid">
-                <!-- Languages -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3 class="skill-category">Languages</h3>
+                <div class="skill-card reveal">
+                    <div class="skill-head">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="skill-category">Languages</h3>
+                    </div>
                     <ul class="skill-list">
                         <li>Python</li>
                         <li>SQL</li>
                         <li>Bash</li>
+                        <li>Scala <span class="sub-skill">(Spark)</span></li>
                     </ul>
                 </div>
 
-                <!-- Cloud Platforms -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                    <h3 class="skill-category">Cloud Platforms</h3>
+                <div class="skill-card reveal">
+                    <div class="skill-head">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h3 class="skill-category">Cloud Platforms</h3>
+                    </div>
                     <ul class="skill-list">
+                        <li>AWS <span class="sub-skill">(Glue, S3, MSK, EKS)</span></li>
                         <li>Azure <span class="sub-skill">(Data Factory, Synapse)</span></li>
                         <li>Databricks</li>
-                        <li>AWS <span class="sub-skill">(Basic)</span></li>
                     </ul>
                 </div>
 
-                <!-- Big Data -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <h3 class="skill-category">Big Data</h3>
+                <div class="skill-card reveal">
+                    <div class="skill-head">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3 class="skill-category">Big Data</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Apache Spark</li>
-                        <li>Databricks</li>
-                        <li>Data Lake</li>
+                        <li>Apache Spark / PySpark</li>
+                        <li>Kafka / Debezium</li>
+                        <li>Iceberg / Delta Lake</li>
+                        <li>Trino</li>
                     </ul>
                 </div>
 
-                <!-- DevOps -->
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                    <h3 class="skill-category">DevOps</h3>
+                <div class="skill-card reveal">
+                    <div class="skill-head">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <h3 class="skill-category">DevOps</h3>
+                    </div>
                     <ul class="skill-list">
-                        <li>Docker</li>
-                        <li>Git & CI/CD</li>
+                        <li>Docker / Kubernetes</li>
+                        <li>Helm</li>
+                        <li>Git &amp; CI/CD</li>
                         <li>Linux</li>
                     </ul>
                 </div>
             </div>
         </section>
-        
+
         <section id="experience" class="section container">
-            <h2 class="section-title"><span class="section-number">03.</span> Where I've Worked</h2>
-            
+            <div class="section-title reveal">
+                <span class="section-comment">-- 03</span>
+                <h2 class="section-heading">Where I've Worked</h2>
+            </div>
+
             <div class="jobs-list">
-                <!-- Data Engineer – Vietnam Silicon -->
-                <div class="job-item">
-                    <div class="job-header-wrapper">
-                        <div class="company-logo">
-                            <img src="assets/logos/vietnamsilicon.png" alt="Vietnam Silicon Logo">
-                        </div>
-                        <div class="job-header">
-                            <h3 class="job-title">Data Engineer <span class="company">@ Vietnam Silicon</span></h3>
-                            <p class="job-range">May 2025 — Present</p>
-                        </div>
+                <div class="job-item reveal">
+                    <div class="company-logo">
+                        <img src="assets/logos/vietnamsilicon.png" alt="Vietnam Silicon Logo">
                     </div>
+                    <h3 class="job-title">Data Engineer <span class="company">@ Vietnam Silicon</span></h3>
+                    <p class="job-range">May 2025 — Present</p>
                     <ul class="job-description">
                         <li>Designed and implemented the core data platform architecture for an agriculture project using AWS (S3, Glue, Iceberg, Trino, EKS).</li>
                         <li>Built and delivered ETL pipelines with Spark/PySpark, ensuring reliable data ingestion and transformation.</li>
                         <li>Applied data security and governance practices (IAM, encryption, metadata/catalog management).</li>
                         <li>Deployed and managed data services on Kubernetes (EKS), including Helm-based deployments and CI/CD.</li>
-                        <li>Mentor and Project Leader for the company’s internship program; developed an automated CV screening product.</li>
+                        <li>Mentor and Project Leader for the company's internship program; developed an automated CV screening product.</li>
                     </ul>
+                    <div class="job-stack">
+                        <span class="tag">AWS</span><span class="tag">Iceberg</span><span class="tag">Trino</span><span class="tag">Spark</span><span class="tag">EKS</span>
+                    </div>
                 </div>
 
-                <!-- Data Lead – EONSR -->
-                <div class="job-item">
-                    <div class="job-header-wrapper">
-                        <div class="company-logo">
-                            <img src="assets/logos/eonsr.png" alt="EONSR Logo">
-                        </div>
-                        <div class="job-header">
-                            <h3 class="job-title">Data Lead <span class="company">@ EONSR (Part-time)</span></h3>
-                            <p class="job-range">May 2025 — September 2025</p>
-                        </div>
+                <div class="job-item reveal">
+                    <div class="company-logo">
+                        <img src="assets/logos/eonsr.png" alt="EONSR Logo">
                     </div>
+                    <h3 class="job-title">Data Lead <span class="company">@ EONSR (Part-time)</span></h3>
+                    <p class="job-range">May 2025 — September 2025</p>
                     <ul class="job-description">
                         <li>Led and coordinated data team resources to ensure timely and high-quality project delivery.</li>
                         <li>Oversaw implementation of analytics and data solutions using Google Analytics 4 (GA4) and BigQuery.</li>
                         <li>Developed interactive dashboards and business reports in Looker Studio for Marketing and Business teams.</li>
                         <li>Integrated and analyzed advertising data from Google Ads, Meta, and TikTok to optimize campaign performance.</li>
                     </ul>
+                    <div class="job-stack">
+                        <span class="tag">GA4</span><span class="tag">BigQuery</span><span class="tag">Looker Studio</span>
+                    </div>
                 </div>
 
-                <!-- Data Engineer – Renova Cloud -->
-                <div class="job-item">
-                    <div class="job-header-wrapper">
-                        <div class="company-logo">
-                            <img src="assets/logos/renova.png" alt="Renova Cloud Logo">
-                        </div>
-                        <div class="job-header">
-                            <h3 class="job-title">Data Engineer <span class="company">@ Renova Cloud</span></h3>
-                            <p class="job-range">May 2023 — May 2025</p>
-                        </div>
+                <div class="job-item reveal">
+                    <div class="company-logo">
+                        <img src="assets/logos/renova.png" alt="Renova Cloud Logo">
                     </div>
+                    <h3 class="job-title">Data Engineer <span class="company">@ Renova Cloud</span></h3>
+                    <p class="job-range">May 2023 — May 2025</p>
                     <ul class="job-description">
                         <li>Led cloud migration projects from on-premise infrastructure to AWS, focusing on scalability and cost optimization.</li>
                         <li>Designed and documented cloud architecture, providing strategic consultation and AWS best practices.</li>
@@ -181,117 +245,120 @@
                         <li>Architected and delivered streaming data systems using Apache Kafka and AWS MSK.</li>
                         <li>Managed and consulted on delivery of data lakes and warehouse architectures for Banking and Healthcare.</li>
                     </ul>
+                    <div class="job-stack">
+                        <span class="tag">AWS</span><span class="tag">Kafka</span><span class="tag">MSK</span><span class="tag">Data Lake</span>
+                    </div>
                 </div>
 
-                <!-- Data Engineer – BnK Solution -->
-                <div class="job-item">
-                    <div class="job-header-wrapper">
-                        <div class="company-logo">
-                            <img src="assets/logos/bnk.png" alt="BnK Solution Logo">
-                        </div>
-                        <div class="job-header">
-                            <h3 class="job-title">Data Engineer <span class="company">@ BnK Solution</span></h3>
-                            <p class="job-range">September 2022 — April 2023</p>
-                        </div>
+                <div class="job-item reveal">
+                    <div class="company-logo">
+                        <img src="assets/logos/bnk.png" alt="BnK Solution Logo">
                     </div>
+                    <h3 class="job-title">Data Engineer <span class="company">@ BnK Solution</span></h3>
+                    <p class="job-range">September 2022 — April 2023</p>
                     <ul class="job-description">
                         <li>Designed and developed data processing platforms and architectures using Databricks.</li>
                         <li>Implemented Lakehouse architecture using Delta Tables.</li>
                         <li>Built data pipelines for reading CSV files using NiFi and transformed raw data using Scala.</li>
                         <li>Processed streaming data using Kafka, Debezium, and Google Cloud Storage.</li>
                     </ul>
+                    <div class="job-stack">
+                        <span class="tag">Databricks</span><span class="tag">Delta Lake</span><span class="tag">NiFi</span><span class="tag">Scala</span>
+                    </div>
                 </div>
 
-                <!-- Data Engineer – TechX Corporation -->
-                <div class="job-item">
-                    <div class="job-header-wrapper">
-                        <div class="company-logo">
-                            <img src="assets/logos/techx.png" alt="TechX Corporation Logo">
-                        </div>
-                        <div class="job-header">
-                            <h3 class="job-title">Data Engineer <span class="company">@ TechX Corporation</span></h3>
-                            <p class="job-range">July 2021 — September 2022</p>
-                        </div>
+                <div class="job-item reveal">
+                    <div class="company-logo">
+                        <img src="assets/logos/techx.png" alt="TechX Corporation Logo">
                     </div>
+                    <h3 class="job-title">Data Engineer <span class="company">@ TechX Corporation</span></h3>
+                    <p class="job-range">July 2021 — September 2022</p>
                     <ul class="job-description">
                         <li>Designed and developed data processing platforms using AWS native services.</li>
                         <li>Built efficient data transformation scripts using Python and PySpark for analytics and ML workflows.</li>
                         <li>Implemented scalable pipelines leveraging AWS Glue Workflows and Step Functions.</li>
                         <li>Created operational dashboards using AWS QuickSight and Power BI.</li>
                     </ul>
+                    <div class="job-stack">
+                        <span class="tag">AWS Glue</span><span class="tag">PySpark</span><span class="tag">QuickSight</span><span class="tag">Power BI</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="achievements" class="section container">
-            <h2 class="section-title"><span class="section-number">04.</span> Achievements & Certifications</h2>
-            
-            <div class="achievements-content">
-                <div class="certs-grid">
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                        <h4>AWS Certified Database</h4>
-                        <p>Specialty</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                        <h4>AWS Certified Data Analytics</h4>
-                        <p>Specialty</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                        <h4>AWS Certified Data Engineer</h4>
-                        <p>Associate</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                        <h4>AWS Certified Solutions Architect</h4>
-                        <p>Associate</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fab fa-aws"></i></div>
-                        <h4>AWS Certified AI</h4>
-                        <p>Practitioner</p>
-                    </div>
-                    <div class="cert-card">
-                        <div class="cert-icon"><i class="fas fa-dog"></i></div>
-                        <h4>Datadog Fundamentals</h4>
-                        <p>Certified</p>
-                    </div>
-                </div>
+            <div class="section-title reveal">
+                <span class="section-comment">-- 04</span>
+                <h2 class="section-heading">Achievements &amp; Certifications</h2>
+            </div>
 
-                <div class="awards-list">
-                    <h3 class="sub-title">Key Recognition</h3>
-                    <ul>
-                        <li><span class="award-name">1st Place</span> — Design & Workshop Challenges, VN Partner Special Force Bootcamp 2023</li>
-                        <li><span class="award-name">Winner</span> — Microservice Challenge, Viet Nam Partner Special Force Bootcamp 2023</li>
-                        <li><span class="award-name">Winner</span> — HCMUTE Scholarship (2020)</li>
-                        <li><span class="award-name">Third Prize</span> — Mastering IT academic competition (2019)</li>
-                        <li><span class="award-name">Paper</span> — AI-Driven Deep Learning Approach for Pan-Cancer Immune Profiling <a href="https://www.researchgate.net/publication/389712291_AI-driven_Deep_Learning_Approach_for_Pan-Cancer_Immune_Profiling" target="_blank" class="paper-icon-link" aria-label="View Research Paper"><i class="fas fa-external-link-alt"></i></a></li>
-                    </ul>
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Certified Database</h4>
+                    <span class="cert-level">Specialty</span>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Certified Data Analytics</h4>
+                    <span class="cert-level">Specialty</span>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Certified Data Engineer</h4>
+                    <span class="cert-level">Associate</span>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Certified Solutions Architect</h4>
+                    <span class="cert-level">Associate</span>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS Certified AI</h4>
+                    <span class="cert-level">Practitioner</span>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-dog"></i></div>
+                    <h4>Datadog Fundamentals</h4>
+                    <span class="cert-level">Certified</span>
                 </div>
             </div>
+
+            <div class="awards-list reveal">
+                <h3 class="sub-title">Key Recognition</h3>
+                <ul>
+                    <li><span class="award-name">1st Place</span> — Design &amp; Workshop Challenges, VN Partner Special Force Bootcamp 2023</li>
+                    <li><span class="award-name">Winner</span> — Microservice Challenge, Viet Nam Partner Special Force Bootcamp 2023</li>
+                    <li><span class="award-name">Winner</span> — HCMUTE Scholarship (2020)</li>
+                    <li><span class="award-name">Third Prize</span> — Mastering IT academic competition (2019)</li>
+                    <li><span class="award-name">Paper</span> — AI-Driven Deep Learning Approach for Pan-Cancer Immune Profiling <a href="https://www.researchgate.net/publication/389712291_AI-driven_Deep_Learning_Approach_for_Pan-Cancer_Immune_Profiling" target="_blank" rel="noopener" class="paper-icon-link" aria-label="View Research Paper"><i class="fas fa-external-link-alt"></i></a></li>
+                </ul>
+            </div>
         </section>
-        
+
         <section id="contact" class="section container contact-section">
-            <h2 class="section-title contact-title"><span class="section-number">05.</span> What's Next?</h2>
-            <h2 class="big-heading">Get In Touch</h2>
-            <p class="contact-text">
-                I'm currently looking for new opportunities as a Senior Data Engineer. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-            </p>
-            <a href="mailto:tutrung.leo@gmail.com" class="btn contact-btn">Say Hello</a>
-            
-            <div class="social-links">
-                <a href="https://github.com/trunleo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/leotrande/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:tutrung.leo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <div class="reveal">
+                <span class="contact-kicker">-- 05 · what's next?</span>
+                <h2 class="big-heading">Get In Touch</h2>
+                <p class="contact-text">
+                    I'm currently open to new opportunities as a Senior Data Engineer.
+                    Whether you have a question, a project, or just want to say hi —
+                    my inbox is always open.
+                </p>
+                <a href="mailto:tutrung.leo@gmail.com" class="btn">Say Hello</a>
+
+                <div class="social-links">
+                    <a href="https://github.com/trunleo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/trungtrandataengineer/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:tutrung.leo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
-        <p>Designed & Built by Trung Tran</p>
+        <p>Designed &amp; built by <span class="amber">Trung Tran</span> · <span id="footer-year"></span></p>
     </footer>
 
     <script src="script.js"></script>
