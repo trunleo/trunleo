@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 56" font-family="'DejaVu Sans Mono','Menlo','Consolas',monospace">
+  <rect x="2" y="2" width="996" height="52" rx="12" fill="#0b0e14" stroke="rgba(148,163,184,0.2)" stroke-width="1.5"/>
+  <line x1="40" y1="28" x2="400" y2="28" stroke="#f5b759" stroke-width="1.5" stroke-dasharray="7 14" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-210" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <text x="500" y="33" font-size="14" fill="#8b94a7" text-anchor="middle">~$ exit 0</text>
+  <line x1="600" y1="28" x2="960" y2="28" stroke="#f5b759" stroke-width="1.5" stroke-dasharray="7 14" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-210" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>

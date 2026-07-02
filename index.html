@@ -51,10 +51,10 @@
                     <h1 class="hero-name">Trung Tran <em>(Leo)</em></h1>
                     <h2 class="hero-role">I move data at scale — reliably.</h2>
                     <p class="hero-description">
-                        <strong>Senior Cloud Data Engineer</strong> based in Vietnam. I architect and build
-                        high-performance data platforms, lakehouses, and streaming systems on
-                        <strong>AWS</strong> and <strong>Azure</strong> — from raw ingestion to
-                        analytics that drive business decisions.
+                        <strong>Senior Data Engineer at OPSWAT</strong>, based in Vietnam. I design and build
+                        high-performance data infrastructure for real-time analytics and machine learning —
+                        data platforms, lakehouses, and streaming systems on
+                        <strong>Azure</strong> and <strong>AWS</strong>.
                     </p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn">Get In Touch</a>
@@ -79,12 +79,12 @@
                     <div class="metric-label">Years in Data</div>
                 </div>
                 <div class="metric reveal">
-                    <div class="metric-value">6</div>
+                    <div class="metric-value">7</div>
                     <div class="metric-label">Certifications</div>
                 </div>
                 <div class="metric reveal">
-                    <div class="metric-value">2</div>
-                    <div class="metric-label">Cloud Platforms</div>
+                    <div class="metric-value">50%+</div>
+                    <div class="metric-label">Infra Cost Cut</div>
                 </div>
                 <div class="metric reveal">
                     <div class="metric-value">1</div>
@@ -101,19 +101,21 @@
             <div class="about-grid">
                 <div class="about-text reveal">
                     <p>
-                        Hello! I'm Trung, a <strong>Senior Cloud Data Engineer</strong> based in Vietnam.
+                        Hello! I'm Trung, a <strong>Senior Data Engineer at OPSWAT</strong>, based in Vietnam.
                         My work lives where infrastructure meets insight: designing the platforms that turn
                         raw, messy data into <span class="hl">reliable, queryable truth</span>.
                     </p>
                     <p>
-                        Over the past five years I've led cloud migrations for banking and healthcare,
-                        architected streaming systems on <strong>Kafka</strong>, and built lakehouses on
-                        <strong>Databricks</strong>, <strong>Iceberg</strong>, and <strong>Delta Lake</strong> —
-                        always with an eye on scalability, cost, and governance.
+                        At OPSWAT I architect the data platform on <strong>Azure Kubernetes Service</strong> —
+                        migrating 50+ pipelines to a self-hosted OSS stack with a Zero-Trust architecture.
+                        Before that: cloud migrations for banking and healthcare, streaming systems on
+                        <strong>Kafka</strong>, and lakehouses on <strong>Databricks</strong>,
+                        <strong>Iceberg</strong>, and <strong>Delta Lake</strong>.
                     </p>
                     <p>
-                        Off the clock, you'll find me playing football, exploring new technology,
-                        and mentoring the next generation of engineers.
+                        I hold a B.Eng in Data Engineering from HCMUTE. Off the clock, you'll find me
+                        playing football, exploring new technology, and mentoring the next generation
+                        of engineers.
                     </p>
                     <div class="about-tags">
                         <span class="tag">data platforms</span>
@@ -156,8 +158,8 @@
                         <h3 class="skill-category">Cloud Platforms</h3>
                     </div>
                     <ul class="skill-list">
+                        <li>Azure <span class="sub-skill">(AKS, Key Vault, Fabric)</span></li>
                         <li>AWS <span class="sub-skill">(Glue, S3, MSK, EKS)</span></li>
-                        <li>Azure <span class="sub-skill">(Data Factory, Synapse)</span></li>
                         <li>Databricks</li>
                     </ul>
                 </div>
@@ -169,9 +171,9 @@
                     </div>
                     <ul class="skill-list">
                         <li>Apache Spark / PySpark</li>
+                        <li>Airflow</li>
                         <li>Kafka / Debezium</li>
-                        <li>Iceberg / Delta Lake</li>
-                        <li>Trino</li>
+                        <li>Iceberg / Delta Lake / Trino</li>
                     </ul>
                 </div>
 
@@ -182,7 +184,7 @@
                     </div>
                     <ul class="skill-list">
                         <li>Docker / Kubernetes</li>
-                        <li>Helm</li>
+                        <li>Terraform / Helm</li>
                         <li>Git &amp; CI/CD</li>
                         <li>Linux</li>
                     </ul>
@@ -199,16 +201,33 @@
             <div class="jobs-list">
                 <div class="job-item reveal">
                     <div class="company-logo">
+                        <img src="assets/logos/opswat-icon.png" alt="OPSWAT Logo">
+                    </div>
+                    <h3 class="job-title">Senior Data Engineer <span class="company">@ OPSWAT</span></h3>
+                    <p class="job-range">March 2026 — Present</p>
+                    <ul class="job-description">
+                        <li>Architected and executed the migration of 50+ data pipelines from Microsoft Fabric to a self-hosted OSS stack on Azure Kubernetes Service (AKS), slashing overall infrastructure costs by over 50%.</li>
+                        <li>Designed and implemented a highly secure, Zero-Trust data architecture for the Data Platform and file storage systems, optimizing Azure resource utilization within strict enterprise security standards.</li>
+                        <li>Directed platform engineering and DataOps — owning the end-to-end release lifecycle (DEV to PROD), building robust CI/CD pipelines, and provisioning infrastructure via Terraform.</li>
+                        <li>Hardened application workloads by integrating Azure Key Vault for centralized secret management across Airflow and the broader AKS cluster.</li>
+                    </ul>
+                    <div class="job-stack">
+                        <span class="tag">Azure</span><span class="tag">AKS</span><span class="tag">Airflow</span><span class="tag">Terraform</span><span class="tag">Zero-Trust</span>
+                    </div>
+                </div>
+
+                <div class="job-item reveal">
+                    <div class="company-logo">
                         <img src="assets/logos/vietnamsilicon.png" alt="Vietnam Silicon Logo">
                     </div>
                     <h3 class="job-title">Data Engineer <span class="company">@ Vietnam Silicon</span></h3>
-                    <p class="job-range">May 2025 — Present</p>
+                    <p class="job-range">May 2025 — March 2026</p>
                     <ul class="job-description">
-                        <li>Designed and implemented the core data platform architecture for an agriculture project using AWS (S3, Glue, Iceberg, Trino, EKS).</li>
-                        <li>Built and delivered ETL pipelines with Spark/PySpark, ensuring reliable data ingestion and transformation.</li>
-                        <li>Applied data security and governance practices (IAM, encryption, metadata/catalog management).</li>
-                        <li>Deployed and managed data services on Kubernetes (EKS), including Helm-based deployments and CI/CD.</li>
-                        <li>Mentor and Project Leader for the company's internship program; developed an automated CV screening product.</li>
+                        <li>Architected the core data platform for a major agriculture project using AWS native services and modern data stack tools (S3, Glue, Iceberg, Trino, EKS), improving data querying speeds by 30%.</li>
+                        <li>Engineered highly reliable ETL pipelines using Spark/PySpark and managed scalable data services on Kubernetes (EKS) via Helm and CI/CD workflows.</li>
+                        <li>Enforced strict enterprise data security and governance protocols, including IAM, encryption, and comprehensive metadata/catalog management.</li>
+                        <li>Developed and deployed an automated CV screening data product for the Talent Acquisition team, reducing manual resume review time by 50%.</li>
+                        <li>Directed the company's internship program as Project Leader, mentoring 4 data science and engineering interns through successful project deliveries.</li>
                     </ul>
                     <div class="job-stack">
                         <span class="tag">AWS</span><span class="tag">Iceberg</span><span class="tag">Trino</span><span class="tag">Spark</span><span class="tag">EKS</span>
@@ -323,6 +342,11 @@
                     <h4>Datadog Fundamentals</h4>
                     <span class="cert-level">Certified</span>
                 </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-dharmachakra"></i></div>
+                    <h4>Datadog Kubernetes Fundamentals</h4>
+                    <span class="cert-level">Certified</span>
+                </div>
             </div>
 
             <div class="awards-list reveal">
@@ -342,9 +366,9 @@
                 <span class="contact-kicker">-- 05 · what's next?</span>
                 <h2 class="big-heading">Get In Touch</h2>
                 <p class="contact-text">
-                    I'm currently open to new opportunities as a Senior Data Engineer.
-                    Whether you have a question, a project, or just want to say hi —
-                    my inbox is always open.
+                    Whether you have a question about data platforms, an interesting
+                    project, or just want to say hi — my inbox is always open.
+                    I'll try my best to get back to you!
                 </p>
                 <a href="mailto:tutrung.leo@gmail.com" class="btn">Say Hello</a>
 
